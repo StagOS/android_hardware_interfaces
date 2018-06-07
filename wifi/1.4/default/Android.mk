@@ -42,6 +42,9 @@ endif
 ifdef WIFI_RESET_IFACE_AFTER_MAC_CHANGE
 LOCAL_CPPFLAGS += -DWIFI_RESET_IFACE_AFTER_MAC_CHANGE
 endif
+ifdef QC_WIFI_HIDL_FEATURE_DUAL_AP
+LOCAL_CPPFLAGS += -DQC_WIFI_HIDL_FEATURE_DUAL_AP
+endif
 # Allow implicit fallthroughs in wifi_legacy_hal.cpp until they are fixed.
 LOCAL_CFLAGS += -Wno-error=implicit-fallthrough
 LOCAL_SRC_FILES := \
